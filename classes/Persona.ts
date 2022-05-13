@@ -1,4 +1,4 @@
-class Persona{ 
+export class Persona{ 
     private nacimiento:number;
     private nombre:string;
 
@@ -12,7 +12,7 @@ class Persona{
  };
 
  public CualEsTuEdad():string{
-     return"Mi edad es"+ this.nacimiento;
+     return"Naci en"+ this.nacimiento;
  };
  
  public CualEsTuGeneracion(){
@@ -33,17 +33,6 @@ class Persona{
  public CualEsTuAño(){
      const edad:number= 2022-(this.nacimiento);
      return "tu edad es " + edad +" años.";
- }
+ };
 };
 
-// termina la def de la clase persona
-let fede=new Persona(2005,"federico fernandez");
-console.log(fede.CualEsTuNombre());
-console.log(fede.CualEsTuAño());
-console.log(fede.CualEsTuGeneracion());
-
- //variables de mis datos
-let nombre:string="Johnny Arvelo";
-const nacimiento: number=1999;
-console.log("hola "+nombre+" te damos la bienvenida desde Typescript" );
-console.log("naciste en "+ nacimiento);
